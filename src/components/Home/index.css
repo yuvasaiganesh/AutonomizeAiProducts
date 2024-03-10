@@ -1,0 +1,34 @@
+.homeSection{
+    display: flex;
+    flex-direction: column;
+    background-repeat: none;    
+    background-image: url("https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1710028800&semt=ais");
+    background-size: cover;
+    min-height:100vh
+}
+h1{
+    color:white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+button{
+    
+    font-family: sans-serif;
+    height:30px;
+    width:100px;
+    border:none;
+    border-radius: 5px;
+    align-self:center;
+    background-color: white;
+   
+
+}
+.para{
+    color:white;
+    font-family: "roboto";
+   
+    font-size: 20px;
+    text-align: center;
+}

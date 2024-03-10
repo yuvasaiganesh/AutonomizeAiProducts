@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+// Install Axios if you haven't already: npm install axios
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ProductDetails from './components/ProductDetails';
+import ProductsGrid from './components/ProductsGrid';
+import Home from './components/Home';
+
+
+const App = () => (
+  <BrowserRouter>
+    
+     
+      <Routes>
+      <Route path="/products/:productId" element={<ProductDetails />} />
+        <Route path="/products" element={<ProductsGrid />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    
+  </BrowserRouter>
+);
 
 export default App;

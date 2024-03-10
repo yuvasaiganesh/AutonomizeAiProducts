@@ -1,0 +1,35 @@
+.productSection{
+    display:flex;
+    flex-direction: column;
+    background-color: grey;
+    min-height: 100vh;
+}
+.product-grid{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:20vw;
+    margin:10px;
+    height:300px
+    
+}
+img{
+    height:200px;
+    width:200px;
+    border-radius: 10px;
+}
+.productTitle{
+    color:white;
+    text-decoration:none;
+    font-family: sans-serif;
+    font-size:15px
+}
