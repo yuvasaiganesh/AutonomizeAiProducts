@@ -23,11 +23,13 @@ const ProductDetails = ( props) => {
       <div className="productDetailsSection">
         <h1>Your choice</h1>
         {product ? (
-          <div className="product-details">
+          <div className="productdetails">
             <img  src={product.image} alt={product.title} />
+            <div className="eachCard">
             <h2>{product.title}</h2>
             <p className="desc">{product.description}</p>
             <p className="price">Price: ${product.price}</p>
+            </div>
           </div>
         ) : (
           <p>Loading...</p>

@@ -8,21 +8,36 @@
    font-family: "Roboto";
 
 }
-.product-details{
+.productdetails{
    display: flex;
    margin-top:50px;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
-   width:500px
+   width:600px;
+   justify-content: space-around;
+   background-color:black;
+   
+   border-radius: 20px;
+   height:400px;
+   
+  
   
 
+}
+.eachCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:300px;
+    
+    
 }
 
 .desc{
     font-size: 12px;
     font-family: sans-serif;
-    font-stretch: expanded;
-    text-align: center;
+   
+   
     font-weight: bold;
 
 }
@@ -41,9 +56,8 @@
 
 h2{
     font-size: 20px;
-   
- 
+    text-decoration: solid;
     font-stretch: expanded;
     font-weight: 700;
-    
 }
+
