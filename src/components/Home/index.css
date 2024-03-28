@@ -32,3 +32,10 @@ button{
     font-size: 20px;
     text-align: center;
 }
+
+.logout{
+    margin:30px;
+    position: absolute;
+    right:40px
+    
+}
