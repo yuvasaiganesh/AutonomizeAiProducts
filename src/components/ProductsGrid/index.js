@@ -29,7 +29,7 @@ const ProductsGrid = () => {
     return (
       <div className="productSection">
         <div className='selectSection'>
-        <h1>Our Products</h1>
+        <h1 className='productSectionHead'>Our Products</h1>
         <select  onChange={handleChange}>
         <option value="">All</option>
           <option key="jewelery" value="jewelery">Jewellery</option>

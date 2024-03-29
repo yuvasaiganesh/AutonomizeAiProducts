@@ -20,16 +20,20 @@ const Home = () => {
  }
 
     return (<div className="homeSection">
-         
+         <div className="headerSection">
+         <button className="logout" onClick={toLogout}>LogOut</button>
       <h1>Welcome to our Store!</h1>
+      
+      </div>
+      <div className="paraSection">
       <p className="para">Best shoppy platform for customers to get their desired products in budget</p>
       
        
           
-          <button><Link to="/products">Products</Link></button>
-          <button class="logout" onClick={toLogout}>LogOut</button>
+          <Link to="/products"><button>Products</button></Link>
+          
         
-      
+          </div>
 
     </div>)
     

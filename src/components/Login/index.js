@@ -45,10 +45,10 @@ const Login = () => {
         }),
       });
 
-      console.log(response);
+      
 
       if (!response.ok) {
-        throw new Error('UserName or password Invalid');
+        throw new Error("Username or password is invalid");
       }
 
       const data = await response.json();
