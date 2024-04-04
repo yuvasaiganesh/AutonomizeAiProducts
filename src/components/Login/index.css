@@ -10,7 +10,9 @@
   }
   
  
-  
+  .loginSection{
+    display: flex;
+  }
   
   
  
@@ -103,4 +105,15 @@
     font-size: 12px;
     line-height: 16px;
     color: #ff0b37;
+  }
+  .register-message{
+    align-self: start;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: 16px;
+    color: green;
+
   }

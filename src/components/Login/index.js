@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
+import React, {  useContext, useState } from 'react';
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom'; 
 import './index.css';
+import { UserDetailsContext } from '../../Context';
+
+
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showSubmitError, setShowSubmitError] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  
+ 
   const history = useNavigate(); 
+  const user=useContext(UserDetailsContext)
+ 
+  
 
   const onChangeUsername = event => {
     setUsername(event.target.value);
@@ -17,11 +25,17 @@ const Login = () => {
   const onChangePassword = event => {
     setPassword(event.target.value);
   };
+  
+  
 
   const onSubmitSuccess = jwtToken => {
+    localStorage.setItem("userName", username)
+    user.update_user_name()
     Cookies.set('jwt_token', jwtToken, {
       expires: 30,
     });
+    
+    
     history('/'); 
   };
 
@@ -29,6 +43,13 @@ const Login = () => {
     setShowSubmitError(true);
     setErrorMsg(errorMsg);
   };
+  
+ 
+
+  
+
+
+
 
   const submitForm = async event => {
     event.preventDefault();
@@ -56,9 +77,21 @@ const Login = () => {
 
       console.log(data);
     } catch (error) {
+      
+     
       onSubmitFailure(error.message);
     }
   };
+
+
+  
+
+
+
+
+
+
+
 
   const renderPasswordField = () => {
     return (
@@ -96,6 +129,7 @@ const Login = () => {
     );
   };
 
+  
   const jwtToken = Cookies.get('jwt_token');
 
   if (jwtToken !== undefined) {
@@ -103,6 +137,9 @@ const Login = () => {
   }
 
   return (
+    
+   
+      
     <div className="login-form-container">
       <img
         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
@@ -116,9 +153,11 @@ const Login = () => {
         <button type="submit" className="login-button">
           Login
         </button>
+        
         {showSubmitError && <p className="error-message">*{errorMsg}</p>}
       </form>
-    </div>
+    </div> 
+
   );
 };
 

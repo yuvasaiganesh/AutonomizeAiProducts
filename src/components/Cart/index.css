@@ -1,0 +1,50 @@
+.loginSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    
+}
+.eachCartSection{
+    
+    width:90vw;
+    max-width:400px;
+    margin: 2em;
+    background-color: white;
+    box-shadow: 2px 2px 15px black;
+    border-radius: 10px;
+    display: flex;
+    
+    max-height:200px
+   
+
+}
+.eachcartContent{
+    padding-left: 2em;
+
+}
+.loginSectionHead{
+    font-size:5vw;
+    
+    color:grey;
+   
+}
+.eachCartSection img{
+    width:20vw;
+    max-width:150px;
+    height:auto
+}
+
+.eachCartSection p{
+    width:20vw;
+    max-width:150px;
+    height:auto;
+    font-size:1.5vw;
+}
+
+.eachCartSection h2{
+    
+    font-size:1.5vw;
+}
