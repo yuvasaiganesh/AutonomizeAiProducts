@@ -1,6 +1,7 @@
 import "./index.css"
 import React, { useState, useEffect, useContext } from 'react';
 import { UserDetailsContext } from '../../Context';
+import Navbar from "../Navbar";
 
 const Cart = () => {
     const [cartitemsid, setCartItemsId] = useState([]);
@@ -89,18 +90,19 @@ useEffect(() => {
    
  
     return (
-      <div >
-        <h1 className="loginSectionHead">Cart Items</h1>
-        <div className="loginSection">
+      <div className="cartSection" >
+        <Navbar/>
+        <h1 className="cartSectionHead">Cart Items</h1>
+        <div className="allcartItems">
         
         
         {items.map((product,index)=>{
-            return(<div key={index} className="eachCartSection">
+            return(<div key={index} className="eachCartItem">
             <img className="eachImage" src={product.image} alt={product.title} />
             <div className="eachcartContent">
             <h2>{product.title}</h2>
            
-            <p className="price">Price: ${product.price}</p>
+            <button className="cartPrice">Price: ${product.price}</button>
             </div>
           </div>)
         })}

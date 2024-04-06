@@ -1,27 +1,11 @@
 .homeSection{
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: white;
     min-height:100vh;
     justify-content:flex-start;
     
     
-}
-.navSection{
-
-    display: flex;
-    align-self: center;
-    
-    margin-top:20px;
-    
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    border-radius: 50px;
-    height:8vh;
-    max-height:80px;
-    width:95vw
-   
 }
 
 
@@ -32,21 +16,19 @@ h1{
     font-size:8vw;
 }
 
-button{
-    
-    font-family: sans-serif;
-    
-    width:15vw;
-    max-width: 120px;
-    height:8vh;
-    max-height: 30px;
-    
-    border:none;
-    
-    color: black;
-    font-size:3.5vw;
-    background-color: transparent;
-    
+
+.secondSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    height:70vh;
+    width:100vw;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin:10px
+  
 }
 
 .paraSection{
@@ -57,6 +39,8 @@ button{
     align-items: center;  
     height:30vh;
     max-height:500px;
+    width:100vw;
+    max-width:300px
     
     
     
@@ -68,44 +52,52 @@ button{
     font-size: 18px;
     text-align: center;
 }
-.homeImage1{
+.homeImage{
   
-    align-self: center;
+    height:auto;
+    width:30vw;
     
+    margin:10px
 }
+    
 
-.navButton{
-  
-    margin: 5px;
-    
-}
-.secondSection{
+
+.mensClothingSection{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    justify-content: space-evenly;
-    height:70vh;
-  
+    justify-content: space-around;
+    height:auto;
+    
+    width:100vw;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin:10px
 }
-.homeImage2{
-    display: none;
+.mensClothingSection img{
+    height:auto;
+    width:25vw;
+    border-radius: 10%;
+    margin:10px
 }
+
+
+
 @media screen and (min-width:700px){
-    button{
-        font-size:2vw
-    }
+    
     .secondSection{
         
         flex-direction: row;
         
         justify-content: space-around;
+        
     }
     h1{
         color:white;
         font-family: 'cursive';
         text-align: center;
-        font-size:6vw;
+        font-size:5vw;
     }
     .para{
        
@@ -113,17 +105,14 @@ button{
         font-size: 2vw;
         
     }
-    .homeImage1{
-        display: none;
-    }
-    .homeImage2{
-        display: flex;
-        width:200px
+    
+    .mensClothingSection{
+       
+        flex-direction: row;
         
-       
-       
-        
-       
     }
+    
+    
+    
 
 }

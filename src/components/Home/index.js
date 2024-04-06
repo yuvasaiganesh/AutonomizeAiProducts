@@ -1,4 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate, Link } from "react-router-dom";
+import Navbar from "../Navbar";
 import { useContext, useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import "./index.css";
@@ -12,12 +13,7 @@ const Home = () => {
 
  
 
-  const toLogout = () => {
-    Cookies.remove("jwt_token");
-    localStorage.removeItem("userName");
-    localStorage.removeItem("userId");
-    Navigate("/login");
-  };
+  
 
   const tomatchUser = () => {
     try {
@@ -70,25 +66,8 @@ const Home = () => {
   return (
     <div className="homeSection">
 
-      <div className="navSection">
-      <Link to="/" className="navButton">
-          <button>Home</button>
-        </Link>
-
-        <Link to="/products" className="navButton">
-          <button>Products</button>
-        </Link>
       
-        <Link to="/cart" className="navButton">
-          <button>Cart</button>
-        </Link>
-      <div className="navButton">
-        <button  onClick={toLogout}>
-          LogOut
-        </button>
-        </div>
-        </div>
-
+          <Navbar/>
         <div className="secondSection">
         <div className="paraSection">
         <h1>Shoppy</h1>
@@ -99,16 +78,76 @@ const Home = () => {
       
       <img
         src="https://understandingtheology.org/wp-content/uploads/2022/10/mobile.jpg"
-        className="homeImage1"
+        className="homeImage"
         alt="website login"
       />
-
-<img
-        src="https://socital.com/wp-content/uploads/2020/10/thumbnail-11-tactics-1.jpg"
-        className="homeImage2"
-        alt="website login"
-      />
+     
+      
    </div>
+
+
+        
+      <div className="mensClothingSection">
+        <h1>Clothing</h1>
+        <Link to="/mensClothing">
+      <img
+        src="https://tse4.mm.bing.net/th/id/OIP.jGYFxiX-JthnUJMmN7r4WgHaMW?w=207&h=317&c=7&r=0&o=5&pid=1.7"
+        className="homeImage"
+        alt="website login"
+      />
+      </Link>
+      <Link to="/womensClothing">
+      <img
+        src="https://tse1.mm.bing.net/th/id/OIP.1Aef9KZxmbYR3814RGO_kAHaLH?pid=ImgDet&w=185&h=277&c=7"
+        className="homeImage"
+        alt="website login"
+      />
+      </Link>
+      </div>
+     
+      
+ 
+
+      <div className="mensClothingSection">
+        <h1>Jewellwery</h1>
+        <Link to="/jewellerry">
+      <img
+        src="https://simplecraftidea.com/wp-content/uploads/2018/12/1-58.jpg"
+        className="homeImage"
+        alt="website login"
+      />
+      </Link>
+      <Link to="/jewellerry">
+      <img
+        src="https://tse4.mm.bing.net/th/id/OIP.eV9dto4D0NwX6UBXKNwNOgAAAA?pid=ImgDet&w=188&h=234&c=7"
+        className="homeImage"
+        alt="website login"
+      />
+      </Link>
+      </div>
+      
+
+
+      <div className="mensClothingSection">
+        <h1>Electronics</h1>
+        <Link to="/electronics">
+      <img
+        src="https://rukmaplastics.com/wp-content/uploads/2023/08/multiple-household.jpg"
+        className="homeImage"
+        alt="website login"
+      />
+      </Link>
+      <Link to="/electronics">
+      <img
+        src="https://tse3.mm.bing.net/th/id/OIP.j_Z1AN-WJqoHgAMz5FdAeAHaL-?pid=ImgDet&w=185&h=298&c=7"
+        className="homeImage"
+        alt="website login"
+      />
+      </Link>
+      </div>
+
+      
+
     </div>
   );
 };

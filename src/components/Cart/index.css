@@ -1,17 +1,30 @@
-.loginSection{
+.cartSection{
+    display: flex;
+    flex-direction: column ;
+    
+    align-items: center;
+    
+    background-color: blueviolet;
+    width:100vw
+   
+    
+}
+
+.allcartItems{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
    
+   
     
 }
-.eachCartSection{
+.eachCartItem{
     
     width:90vw;
-    max-width:400px;
-    margin: 2em;
+    max-width:900px;
+    margin: 1em;
     background-color: white;
     box-shadow: 2px 2px 15px black;
     border-radius: 10px;
@@ -22,29 +35,38 @@
 
 }
 .eachcartContent{
-    padding-left: 2em;
+    display: flex;
+    padding:10px;
+    justify-content: space-around;
+    
+    width:80vw
+   
 
 }
-.loginSectionHead{
+.cartSectionHead{
     font-size:5vw;
     
-    color:grey;
+    color:white;
    
 }
-.eachCartSection img{
-    width:20vw;
-    max-width:150px;
-    height:auto
-}
-
-.eachCartSection p{
-    width:20vw;
-    max-width:150px;
-    height:auto;
-    font-size:1.5vw;
-}
-
-.eachCartSection h2{
+.eachCartItem img{
+    width:10vw;
     
+    height: auto;
+    
+}
+
+.eachCartItem button{
+    width:20vw;
+    max-width:130px;
+    max-height:40px;
     font-size:1.5vw;
+    background-color: orangered;
+    color:white;
+    border-radius: 5px;
+}
+
+.eachCartItem h2{
+    
+    font-size:2vw;
 }

@@ -142,7 +142,7 @@ const Login = () => {
       
     <div className="login-form-container">
       <img
-        src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
+        src="https://images.moneycontrol.com/static-mcnews/2022/10/online-retail.jpg"
         className="login-img"
         alt="website login"
       />

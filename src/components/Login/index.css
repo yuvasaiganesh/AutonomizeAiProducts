@@ -18,8 +18,10 @@
  
    
   .login-img {
-    width: 70%;
-    max-width:300px
+    width: 90%;
+    max-width:500px;
+    height:30vh;
+    
   }
 
  

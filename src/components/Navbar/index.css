@@ -1,0 +1,64 @@
+.navSection1{
+
+    display: flex;
+    align-self: center;
+    
+    margin-top:20px;
+    
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom:1px solid blueviolet;
+    
+    height:8vh;
+    max-height:80px;
+    width:95vw
+   
+}
+
+
+
+
+
+.navButton{
+    
+    font-family: sans-serif;
+    
+    width:50px;
+   
+    height:20px;
+   
+    
+    border:none;
+    
+    color: blueviolet;
+   
+    
+   
+    
+}
+
+
+
+
+.navItems{
+  
+    margin: 5px;
+    width:20vw;
+    
+    
+}
+
+
+@media screen and (min-width:700px){
+    .navButton{
+        font-size:2vw
+    }
+
+   
+    }
+   
+    
+    
+    
+
