@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
    align-items: center;
-   background-color: grey;
-   height:100vh;
-   color:pink;
+   background-color: blueviolet;
+   min-height:100vh;
+   color:black;
    font-family: "Roboto";
 
 }
@@ -12,30 +12,21 @@
    display: flex;
    margin-top:50px;
    flex-direction: column;
-   align-items: center;
-   width:80vw;
+   width:90vw;
    max-width: 600px;
-   justify-content: space-around;
-   background-color:black;
+   justify-content: space-between;
+   align-items: center;
+   background-color:white;
    border-radius: 20px;
-   height:70vh;
-   max-height: 500px;
-   
-   
-  
-  
-
+   height: auto;
 }
 .eachCard{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width:70vw;
-    max-width: 600px;
+    width:85vw;
+    max-width: 400px;
+    height: auto;
     padding: 10px;
-    
-    
-    
     
 }
 
@@ -66,13 +57,15 @@ h2{
     font-weight: 700;
 }
 .eachImage{
- width: 60vw;
- max-width: 200px;
+ width: 20vw;
+ max-width: 100px;
+ height: auto;
+ border-radius: 20px;
 }
 
 
 
-@media screen and (min-width:400px){
+@media screen and (min-width:500px){
    
    
     
@@ -82,12 +75,18 @@ h2{
        
     
     }
+    .productdetails{
+       
+        flex-direction: row;
+    
+     }
    
     
     h2{
-        font-size: 14px;
+        font-size: 12px;
         
     }
+    
     
     
 }
@@ -101,14 +100,14 @@ h2{
     
     
        .desc{
-        font-size: 15px;
+        font-size: 12px;
        
     
     }
     
     
     h2{
-        font-size: 17px;
+        font-size: 13px;
         
     }
 }

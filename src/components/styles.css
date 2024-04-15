@@ -35,14 +35,15 @@
     
   
 }
-.product-card p{
-    font-size: 2.5vw;
+.productTitle{
+    font-size: 10px;
     color:black;
+    text-decoration-style: none;
 
 }
-@media screen and (min-width:700px){
-    .product-card p{
-        font-size: 1.5vw;
+@media screen and (min-width:400px){
+    .productTitle{
+        font-size: 15px;
       
     
     }

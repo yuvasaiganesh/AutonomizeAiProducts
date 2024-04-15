@@ -1,8 +1,10 @@
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import "./index.css"
+import Navbar from '../Navbar';
 
 import React, { useState, useEffect } from 'react';
+
 
 const ProductDetails = ( props) => {
     const [product, setProduct] = useState(null);
@@ -21,6 +23,7 @@ const ProductDetails = ( props) => {
   
     return (
       <div className="productDetailsSection">
+        <Navbar/>
         <h1 className="productSectionHead">Your choice</h1>
         {product ? (
           <div className="productdetails">

@@ -93,6 +93,7 @@ useEffect(() => {
       <div className="cartSection" >
         <Navbar/>
         <h1 className="cartSectionHead">Cart Items</h1>
+        {items.length>0 ?
         <div className="allcartItems">
         
         
@@ -106,7 +107,7 @@ useEffect(() => {
             </div>
           </div>)
         })}
-      </div>
+      </div>  : <h1>Loading...</h1>}
       </div>
     );
   };

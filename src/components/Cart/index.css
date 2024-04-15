@@ -5,7 +5,8 @@
     align-items: center;
     
     background-color: blueviolet;
-    width:100vw
+    width:100vw;
+    min-height: 100vh;
    
     
 }
@@ -59,14 +60,25 @@
 .eachCartItem button{
     width:20vw;
     max-width:130px;
-    max-height:40px;
-    font-size:1.5vw;
+    height:10vw;
+    max-height:30px;
+    font-size:2vw;
     background-color: orangered;
     color:white;
     border-radius: 5px;
+    border: none;
+    
 }
 
 .eachCartItem h2{
     
     font-size:2vw;
+}
+
+@media screen and (min-width:768px){
+    .eachCartItem button{
+        
+        font-size:12px;
+       
+    }
 }

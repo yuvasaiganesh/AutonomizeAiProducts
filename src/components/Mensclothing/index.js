@@ -25,6 +25,7 @@ useEffect(() => {
 return (
     <div className="productSection">
     <Navbar/>
+    {products.length>0 ?
    <div className="product-grid">
       {products.map(product => (
         <div key={product.id} >
@@ -35,7 +36,7 @@ return (
         </div>
       ))}
     
-  </div>
+  </div> :<h1>Loading...</h1>}
   </div>)
 
 
