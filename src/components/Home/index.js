@@ -68,7 +68,7 @@ const Home = () => {
 
       
           <Navbar/>
-        <div className="secondSection">
+        <div className="mainSection">
         <div className="paraSection">
         <h1>Shoppy</h1>
      
@@ -79,7 +79,7 @@ const Home = () => {
       <img
         src="https://understandingtheology.org/wp-content/uploads/2022/10/mobile.jpg"
         className="homeImage"
-        alt="website login"
+        alt="SectionImage"
       />
      
       
@@ -87,20 +87,20 @@ const Home = () => {
 
 
         
-      <div className="mensClothingSection">
+      <div className="EachHomeSection">
         <h1>Clothing</h1>
         <Link to="/mensClothing">
       <img
         src="https://tse4.mm.bing.net/th/id/OIP.jGYFxiX-JthnUJMmN7r4WgHaMW?w=207&h=317&c=7&r=0&o=5&pid=1.7"
         className="sectionImage"
-        alt="website login"
+        alt="SectionImage"
       />
       </Link>
       <Link to="/womensClothing">
       <img
         src="https://tse1.mm.bing.net/th/id/OIP.1Aef9KZxmbYR3814RGO_kAHaLH?pid=ImgDet&w=185&h=277&c=7"
         className="sectionImage"
-        alt="website login"
+        alt="SectionImage"
       />
       </Link>
       </div>
@@ -108,40 +108,40 @@ const Home = () => {
       
  
 
-      <div className="mensClothingSection">
+      <div className="EachHomeSection">
         <h1>Jewellwery</h1>
         <Link to="/jewellerry">
       <img
         src="https://simplecraftidea.com/wp-content/uploads/2018/12/1-58.jpg"
         className="sectionImage"
-        alt="website login"
+        alt="SectionImage"
       />
       </Link>
       <Link to="/jewellerry">
       <img
         src="https://tse4.mm.bing.net/th/id/OIP.eV9dto4D0NwX6UBXKNwNOgAAAA?pid=ImgDet&w=188&h=234&c=7"
         className="sectionImage"
-        alt="website login"
+        alt="SectionImage"
       />
       </Link>
       </div>
       
 
 
-      <div className="mensClothingSection">
+      <div className="EachHomeSection">
         <h1>Electronics</h1>
         <Link to="/electronics">
       <img
         src="https://rukmaplastics.com/wp-content/uploads/2023/08/multiple-household.jpg"
         className="sectionImage"
-        alt="website login"
+        alt="SectionImage"
       />
       </Link>
       <Link to="/electronics">
       <img
         src="https://tse3.mm.bing.net/th/id/OIP.j_Z1AN-WJqoHgAMz5FdAeAHaL-?pid=ImgDet&w=185&h=298&c=7"
         className="sectionImage"
-        alt="website login"
+        alt="SectionImage"
       />
       </Link>
       </div>
